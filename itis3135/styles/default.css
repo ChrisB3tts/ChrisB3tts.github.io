@@ -1,0 +1,47 @@
+body {
+    text-align: center;
+    background-color: #34223d;
+    font-family: Trebuchet MS ,Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+h1 {
+
+    font-size: 250%;
+}
+
+nav {
+
+    font-size: 130%;
+}
+
+
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+    color: #a7a5a8;
+}
+a:hover {
+    text-decoration: underline;
+
+}
+
+
+h2 {
+    font-size: 200%;
+}
+
+p {
+    font-size: 150%;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    font-size: 70%;
+    margin-top: 3em;
+    margin-bottom: 2em;
+
+}
