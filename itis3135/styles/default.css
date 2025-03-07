@@ -20,6 +20,7 @@ nav {
 
 a:link {
     text-decoration: none;
+    color: #ffffff;
 }
 a:visited {
     text-decoration: none;
@@ -38,12 +39,14 @@ p {
     font-size: 150%;
 }
 
-footer {
-    position: absolute;
+signiture {
+    font-size: 100%;
+    color: white;
+}
 
-    left: 0;
+footer {
+
     width: 100%;
     background: #333;
     color: white;
-
 }
