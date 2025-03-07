@@ -1,17 +1,19 @@
-body {
+html, body {
     text-align: center;
     background-color: #34223d;
     font-family: Trebuchet MS ,Helvetica, sans-serif;
     color: #ffffff;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    
 }
 
 h1 {
-
     font-size: 250%;
 }
 
 nav {
-
     font-size: 130%;
 }
 
@@ -25,7 +27,6 @@ a:visited {
 }
 a:hover {
     text-decoration: underline;
-
 }
 
 
@@ -38,10 +39,11 @@ p {
 }
 
 footer {
-    text-align: center;
+    position: absolute;
+
+    left: 0;
     width: 100%;
-    font-size: 70%;
-    margin-top: 3em;
-    margin-bottom: 2em;
+    background: #333;
+    color: white;
 
 }
