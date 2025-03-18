@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script
+      src="https://lint.page/kit/4d0fe3.js"
+      crossorigin="anonymous"
+    ></script>
+        <title>My Hobby - Audio</title>
+        <style>
+            body {
+                font-family: 'Georgia', serif;
+                background-color: #C1BDB3;
+                color: #3d3b3c;
+                margin: 0;
+                padding: 0;
+            }
+    
+            header {
+                background-color: #323031;
+                color: #C1BDB3;
+                padding: 20px;
+                text-align: center;
+            }
+    
+            h1 {
+                margin: 0;
+                font-size: 2.5em;
+            }
+    
+            nav {
+                margin-top: 10px;
+            }
+    
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin: 0 10px;
+                font-size: 1.2em;
+            }
+    
+            nav a:hover {
+                text-decoration: underline;
+            }
+    
+            main {
+                padding: 20px 400px;
+            }
+    
+            section {
+                display: none; 
+                margin-bottom: 30px;
+            }
+    
+             h2 {
+                color: #5F5B6B;
+                font-size: 2em;
+                margin-bottom: 10px;
+            }
+    
+            figure {
+                margin: 0;
+                text-align: center;
+            }
+    
+            img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
+    
+            figcaption {
+                font-style: italic;
+                color: #5F5B6B;
+                margin-top: 5px;
+            }
+    
+            footer {
+                background-color: #5F5B6B;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                margin-top: 20px;
+            }
+    
+            footer a {
+                color: #5F5B6B;
+                text-decoration: none;
+            }
+    
+            footer a:hover {
+                text-decoration: underline;
+            }
+    
+            .active {
+                display: block;
+            }
+    
+            .divider {
+                margin: 0 5px;
+                color: #323031;
+            }
+
+            img {
+                width: 50%;
+                height: auto;
+            }
+        </style>
+    </head>
+
+
+<body>
+    <header>
+        <h1>My Hobby: Audio</h1>
+        <nav>
+            <a href="#what" onclick="showSection('what')">Home</a>
+            <span class="divider">|</span>
+            <a href="#who" onclick="showSection('who')">About Me</a>
+            <span class="divider">|</span>
+            <a href="#when" onclick="showSection('when')">When I Got Started</a>
+            <span class="divider">|</span>
+
+            <a href="#how" onclick="showSection('how')">How</a>
+            <span class="divider">|</span>
+            <a href="#why" onclick="showSection('why')">Why</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="what" class="active">
+            <h2>Home</h2>
+            <p>Audio as a hobby involves exploring the intricacies of sound. Using High Fidelity to listen audio becomes wider and gains a depth that most would find. I blends a love for msuic
+                and technicality in electronics.
+            </p>
+            <figure>
+                <img src="images/Setup.jpg" alt="Speaker Setup">
+                <figcaption>Speaker Setup</figcaption>
+
+        </section>
+
+        <section id="who">
+            <h2>About Me</h2>
+            <p>Hi, I'm Chris Betts, an audio nerd who likes to listen to music, in the most pretentious way possible.</p>
+            <figure>
+                <img src="images/AKG.jpg" alt="Me">
+                <figcaption>AKG K612 Pro</figcaption>
+            </figure>
+
+        </section>
+
+        <section id="when">
+            <h2>When I got started</h2>
+            <p>I got into audio during covid. I got started form watching youtube and stumbling down a audio rabbit hole.</p>
+
+        </section>
+
+
+
+        <section id="how">
+            <h2>How</h2>
+            <p>I use a varity of devices to listen to music. I use a pair of AKG K612 Pro headphones, a pair of IEMs, Or my Speakers.</p>
+            <figure>
+                <img src="images/IEM1.jpg" alt="Iems">
+                <figcaption>Simgot IEMs</figcaption>
+            </figure>
+            <figure>
+                <img src="images/IEM2.jpg" alt="Iems">
+                <figcaption>TRUTHEAR IEMs</figcaption>
+            </figure>
+
+        </section>
+
+        <section id="why">
+            <h2>Why</h2>
+            <p>Listening to music has always been special to me, and enhancing that experience has been a passion.</p>
+
+    </main>
+
+    <footer>
+        <p>Designed by CBetts</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('section').forEach((section) => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            showSection('what');
+        });
+    </script>
+
+</body>
+</html>
