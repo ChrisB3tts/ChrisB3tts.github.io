@@ -1,57 +1,63 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ballou Photography</title>
-        <link rel="stylesheet" href="styles\style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet">
-        <style>
-            .bg-image {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-image: url("images/Moonset pier.jpg");
-                filter: blur(6px);
-    
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                z-index: -1;
-            }
-        </style>
-    </head>
-<body> 
-    <header>
-        <header>
-            <div class="navbar">
-                <nav>
-                    <a href="index.html">Home</a></li>
-                    <a href="gallery.html">Gallery</a></li>
-                    <a href="about.html">About</a></li>
-                    <a href="contact.html">Contact</a></li>
-                    <a href="bts.html">BTS</a></li>
-                </nav>
-            </div>
-        </header>
-    </header>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ballou Photography | About</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        .bg-image {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("images/Moonset pier.jpg");
+            filter: blur(6px);
+            background-position: center;
+            background-size: cover;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <div data-include="components/header.html"></div>
+
     <main>
         <div class="bg-image"></div>
 
-        <h1 class="subtitle">About Me</h1>
-        <p class="description">
-            I am a photographer from Durham NC. I worked as a Math Teacher for Durham Public Schools for 30 years and am now retired.
-        </p>
-
+        <h2 class="subtitle">About Me</h2>
+        <div class="description">
+            <p>
+                Hey there, I’m Christine Betts, a nature and wildlife photographer based in North Carolina, always
+                chasing
+                light,
+                quiet moments, and the wild things in between. I spend a lot of time exploring the Blue Ridge Mountains,
+                walking the shores of the Outer Banks, and watching reflections shift on peaceful lakes. Whether it's a
+                horse moving
+                through the dunes on the coast or a heron lifting off from still water, I love capturing those
+                unscripted
+                moments in the natural world.
+            </p>
+            <p>
+                For me, photography is about more than just beautiful views — it’s about the feeling of being out there.
+                The
+                hush of the woods, the rhythm of waves, the stillness before a bird takes flight. North Carolina is full
+                of
+                these little wonders, and I try to reflect that through every image I make.
+            </p>
+        </div>
     </main>
 
-    <footer>
-        <p class="copyright">&copy; 2025 Ballou Photography. All rights reserved.</p>
-    </footer>
-</body> 
+    <div data-include="components/footer.html"></div>
+
+    <script src="scripts/HTMLinclude.min.js"></script>
+</body>
+
 </html>

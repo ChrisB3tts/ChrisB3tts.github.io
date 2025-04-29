@@ -1,52 +1,52 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ballou Photography</title>
-        <link rel="stylesheet" href="styles\style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet">
-        <style>
-            .bg-image {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-image: url("images/Untitled-244.jpg");
-                filter: blur(6px);
-    
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                z-index: -1;
-            }
-        </style>
-    </head>
-<body> 
-    <header>
-        <header>
-            <div class="navbar">
-                <nav>
-                    <a href="index.html">Home</a></li>
-                    <a href="gallery.html">Gallery</a></li>
-                    <a href="about.html">About</a></li>
-                    <a href="contact.html">Contact</a></li>
-                    <a href="bts.html">BTS</a></li>
-                </nav>
-            </div>
-        </header>
-    </header>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ballou Photography | Behind the Scenes</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        .bg-image {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("images/Untitled-244.jpg");
+            filter: blur(6px);
+            background-position: center;
+            background-size: cover;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <div data-include="components/header.html"></div>
+
     <main>
         <div class="bg-image"></div>
 
+        <div class="description">
+            <p>
+                <img src="images/IMG_20250429_000850.jpg " alt="Toyota Tacoma" class="btsimg">
+            </p>
+            <p>
+                I recently bought a used Toyota Tacoma. I was looking for a new vehicle and decided to go with the
+                Tacoma due to it's reliability. I needed a truck that could do off roading better than my mustang. First
+                non-ford car I have owned in a while.
+            </p>
+        </div>
     </main>
 
-    <footer>
-        <p class="copyright">&copy; 2025 Ballou Photography. All rights reserved.</p>
-    </footer>
-</body> 
+    <div data-include="components/footer.html"></div>
+
+    <script src="scripts/HTMLinclude.min.js"></script>
+</body>
+
 </html>

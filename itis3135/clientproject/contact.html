@@ -1,62 +1,56 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ballou Photography</title>
-        <link rel="stylesheet" href="styles\style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet">
-        <style>
-            .bg-image {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-image: url("images/Untitled-248.jpg");
-                filter: blur(6px);
-    
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                z-index: -1;
-            }
-        </style>
-    </head>
-<body> 
-    <header>
-        <header>
-            <div class="navbar">
-                <nav>
-                    <a href="index.html">Home</a></li>
-                    <a href="gallery.html">Gallery</a></li>
-                    <a href="about.html">About</a></li>
-                    <a href="contact.html">Contact</a></li>
-                    <a href="bts.html">BTS</a></li>
-                </nav>
-            </div>
-        </header>
-    </header>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ballou Photography | Contact</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        .bg-image {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("images/Untitled-248.jpg");
+            filter: blur(6px);
+            background-position: center;
+            background-size: cover;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <div data-include="components/header.html"></div>
 
     <main>
         <div class="bg-image"></div>
 
-        <h1 class="subtitle">Contact Information</h1>
-        
-        <p>
-            <ul class="description">
-                <li>Phone: 123-123-4567</li>
-                <li>Email: 8XHwI@example.com</li>
-            </ul>
-        </p>
+
+        <div class="description">
+            <h2>Contact Information</h2>
+            <p> christine.b.betts@gmail.com</p>
+            <p> 919-270-7646</p>
+            <h2>Socials</h2>
+            <p class="social"> <a href="https://www.instagram.com/ballouphotography/">Instagram</a></p>
+        </div>
+
+
+
+
+
 
     </main>
 
-    <footer>
-        <p class="copyright">&copy; 2025 Ballou Photography. All rights reserved.</p>
-    </footer>
-</body> 
+    <div data-include="components/footer.html"></div>
+
+    <script src="scripts/HTMLinclude.min.js"></script>
+</body>
+
 </html>
