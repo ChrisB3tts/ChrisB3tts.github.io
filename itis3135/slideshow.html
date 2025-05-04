@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/default.css" />
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <title>CBetts ITIS 3135 Slideshow</title>
+
+    <style>
+        #slideshow-container {
+            max-width: 1000px;
+            min-width: 100px;
+            margin: 0 auto;
+            position: relative;
+
+        }
+
+        .slide {
+            display: none;
+        }
+
+
+        button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #333;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #prev {
+            left: 30%;
+        }
+
+        #next {
+            right: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+
+    <main>
+        <div id="slideshow-container">
+            <div class="slide">
+                <img src="images/slideshow/A-Cat.jpg" alt="Slide 1">
+            </div>
+
+            <div class="slide">
+                <img src="images/slideshow/House.JPG" alt="Slide 2">
+            </div>
+
+            <div class="slide">
+                <img src="images/slideshow/River.jpg" alt="Slide 3">
+            </div>
+
+            <div class="slide">
+                <img src="images/slideshow/IceBlockNearJoekullsarlon.jpg" alt="Slide 1">
+            </div>
+
+            <div class="slide">
+                <img src="images/slideshow/The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA's_Solar_Dynamics_Observatory_-_20100819.jpg"
+                    alt="Slide 2">
+            </div>
+
+            <div class="slide">
+                <img src="images/slideshow/Tree_in_Mississippi.jpg" alt="Slide 3">
+            </div>
+
+            <div class="slide">
+                <img src="images/slideshow/Ocean_water.jpg" alt="Slide 1">
+            </div>
+
+            <div class="slide">
+                <img src="images/slideshow/960px-Mercury_in_color_-_Prockter07_centered.jpg" alt="Slide 2">
+            </div>
+
+            <div class="slide">
+                <img src="images/slideshow/Stetson_cowboy_hat_1920s_renovated_back.jpg" alt="Slide 3">
+            </div>
+
+            <div class="slide">
+                <img src="images/slideshow/North_America_from_low_orbiting_satellite_Suomi_NPP.jpg" alt="Slide 1">
+            </div>
+
+            <div class="slide">
+                <img src="images/slideshow/Rosa_'Rosengräfin_Marie_Henriette'_(actm).jpg" alt="Slide 2">
+            </div>
+
+            <div class="slide">
+                <img src="images/slideshow/Latin_dictionary.jpg" alt="Slide 3">
+            </div>
+
+            <div class="slide">
+                <img src="images/slideshow/African_hawk-eagle_(Aquila_spilogaster).jpg" alt="Slide 1">
+            </div>
+
+            <div class="slide">
+                <img src="images/slideshow/Bengal_tiger_(Panthera_tigris_tigris)_female_3.jpg" alt="Slide 2">
+            </div>
+
+            <div class="slide">
+                <img src="images/slideshow/Toronto_-_ON_-_Toronto_Harbourfront7.jpg" alt="Slide 3">
+            </div>
+
+            <div class="slide">
+                <img src="images/slideshow/VST_images_the_Lagoon_Nebula.jpg" alt="Slide 3">
+            </div>
+        </div>
+
+        <button id="prev">❮</button>
+        <button id="next">❯</button>
+
+        <p>C – Cat</p>
+        <p> H – House</p>
+        <p> R – River</p>
+        <p> I – Ice</p>
+        <p> S – Sun</p>
+        <p> T – Tree</p>
+        <p> O – Ocean </p>
+        <p> P – Planet</p>
+        <p> H – Hat</p>
+        <p> E – Earth</p>
+        <p> R – Rose</p>
+        <p> B – Book</p>
+        <p> E – Eagle</p>
+        <p> T – Tiger</p>
+        <p> T – Tower</p>
+        <p> S – Star</p>
+
+    </main>
+
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/slideshow.js"></script>
+    <script src="scripts/HTMLinclude.min.js"></script>
+</body>
+
+</html>

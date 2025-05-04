@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/default.css" />
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <title>CBetts ITIS 3135 Tables</title>
+</head>
+
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+
+    <main>
+        <h2>HTML Tables</h2>
+
+        <h3>Tabular Data</h3>
+        <div class="tabledata">
+            <p>Jason Bateman - jasonbateman@gmail - 15</p>
+            <p>Michael Cera - michaelcera@gmail - 6</p>
+            <p>Portia de Rossi - portiaderossi@gmail - 14</p>
+            <p>Will Arnett - willarnett@gmail - 13</p>
+            <p>Alia Shawkat - aliashawkat@gmail - 2</p>
+            <p>Tony Hale - tonyhale@gmail - 6</p>
+            <p>David Cross - davidcross@gmail - 2</p>
+        </div>
+
+        <h3>Employee Data Table</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>YoS</th>
+            </tr>
+            <tr>
+                <td>Jason Bateman</td>
+                <td>jasonbateman@gmail</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Michael Cera</td>
+                <td>michaelcera@gmail</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Portia de Rossi</td>
+                <td>portiaderossi@gmail</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>Will Arnett</td>
+                <td>willarnett@gmail</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>Alia Shawkat</td>
+                <td>aliashawkat@gmail</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Tony Hale</td>
+                <td>tonyhale@gmail</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>David Cross</td>
+                <td>davidcross@gmail</td>
+                <td>2</td>
+            </tr>
+        </table>
+
+        <figure>
+            <figcaption>Complex Employee Data Table</figcaption>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Department</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Years</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td rowspan="2">Leaders</td>
+                    <td>Jason Bateman</td>
+                    <td>jasonbateman@gmail</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>Michael Cera</td>
+                    <td>michaelcera@gmail</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">HR</td>
+                    <td>Portia de Rossi</td>
+                    <td>portiaderossi@gmail</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>Will Arnett</td>
+                    <td>willarnett@gmail</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>Alia Shawkat</td>
+                    <td>aliashawkat@gmail</td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">IT</td>
+                    <td>Tony Hale</td>
+                    <td>tonyhale@gmail</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>David Cross</td>
+                    <td>davidcross@gmail</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td colspan="3"><strong>Total Years of Service</strong></td>
+                    <td>58</td>
+                </tr>
+            </table>
+
+        </figure>
+
+
+    </main>
+
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+    <script src="scripts/HTMLinclude.min.js"></script>
+</body>
+
+</html>

@@ -1,52 +1,168 @@
-html, body {
-    text-align: center;
-    background-color: #34223d;
-    font-family: Trebuchet MS ,Helvetica, sans-serif;
-    color: #ffffff;
-    height: 100%;
-    margin: 0;
-    position: relative;
-    
+body {
+  text-align: center;
+  background-color: #34223d;
+  font-family: Trebuchet MS, Helvetica, sans-serif;
+  color: #ffffff;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+main {
+  margin: 100px 0;
+  padding-bottom: 80px;
 }
 
 h1 {
-    font-size: 250%;
+  margin-top: 50px;
 }
-
-nav {
-    font-size: 130%;
-}
-
-
-a:link {
-    text-decoration: none;
-    color: #ffffff;
-}
-a:visited {
-    text-decoration: none;
-    color: #a7a5a8;
-}
-a:hover {
-    text-decoration: underline;
-}
-
 
 h2 {
-    font-size: 200%;
+  font-size: 200%;
 }
 
 p {
-    font-size: 150%;
+  font-size: 150%;
 }
 
-signiture {
-    font-size: 100%;
-    color: white;
+.navbar {
+  width: 100%;
+}
+
+.navbar a {
+  padding: 8px;
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:visited {
+  color: #a7a5a8;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+main {
+  margin: 100px 0;
+}
+
+.section {
+  margin: 50px 30% 100px;
+}
+
+.courses,
+li {
+  font-size: 16px;
+  margin: 0 30%;
 }
 
 footer {
+  font-size: 14px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #1d181f;
+  padding-top: 10px;
+}
 
-    width: 100%;
-    background: #333;
-    color: white;
+.footernav a {
+  padding: 10px;
+  font-size: 24px;
+}
+
+.tabledata p {
+  font-size: 16px;
+  margin: 0 30%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+th {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 9px;
+  text-align: left;
+  background-color: #332139;
+  color: white;
+}
+
+td {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 9px;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #412645;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(64, 42, 77);
+}
+
+@media (max-width: 1024px) {
+  .section,
+  .courses,
+  li {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .navbar a,
+  .footernav a {
+    font-size: 16px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 95%;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+
+  .section,
+  .courses,
+  li {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar a {
+    font-size: 18px;
+    padding: 4px 8px;
+  }
+
+  main {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+  }
+
+  footer {
+    padding-top: 10px;
+  }
+
+  .footernav a {
+    font-size: 18px;
+    padding: 5px;
+  }
 }

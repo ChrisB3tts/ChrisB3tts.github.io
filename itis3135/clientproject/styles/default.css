@@ -33,6 +33,7 @@ h2 {
 
 .description {
   margin-top: 10%;
+  padding-top: 10%;
   width: 60%;
   align-self: center;
   margin-left: auto;
@@ -132,4 +133,45 @@ h2 {
   height: 200px;
   object-fit: cover;
   display: block;
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 95%; /* More screen usage */
+  }
+
+  p {
+    font-size: 1.1em; /* Better readability */
+  }
+
+  .section,
+  .courses,
+  li {
+    margin-left: 5%;
+    margin-right: 5%; /* Almost full width */
+  }
+
+  .navbar {
+    flex-wrap: wrap; /* Allow nav items to wrap */
+  }
+
+  .navbar a {
+    font-size: 18px;
+    padding: 4px 8px; /* Better touch targets */
+  }
+
+  main {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-bottom: 60px; /* Prevents footer cutoff */
+  }
+
+  footer {
+    padding-top: 10px;
+  }
+
+  .footernav a {
+    font-size: 18px;
+    padding: 5px;
+  }
 }
