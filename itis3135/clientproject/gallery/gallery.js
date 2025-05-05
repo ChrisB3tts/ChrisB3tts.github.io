@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .then((data) => {
             const galleryContainer = document.getElementById('gallery');
             
-            data.forEach((image, index) => {
+            data.forEach((image) => {
                 const galleryItem = document.createElement('div');
                 galleryItem.className = 'gallery-item';
                 
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             
             lightbox.option({
-                'resizeDuration': 200,
+                'resizeDuration': 0,
                 'wrapAround': true,
                 'showImageNumberLabel': false,
                 'positionFromTop': 100

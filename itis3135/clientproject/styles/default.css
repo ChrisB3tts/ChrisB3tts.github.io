@@ -5,6 +5,16 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Trattatello";
+  src: url("https://db.onlinewebfonts.com/t/05289e866fe7e1e99d27a7a31f8d3b66.eot");
+  src: url("https://db.onlinewebfonts.com/t/05289e866fe7e1e99d27a7a31f8d3b66.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/05289e866fe7e1e99d27a7a31f8d3b66.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/05289e866fe7e1e99d27a7a31f8d3b66.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/05289e866fe7e1e99d27a7a31f8d3b66.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/05289e866fe7e1e99d27a7a31f8d3b66.svg#Trattatello")format("svg");
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -70,7 +80,7 @@ h2 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: "Trattatello", sans-serif;
+  font-family: 'Trattatello', cursive; 
 }
 
 .subtitle {
@@ -105,7 +115,7 @@ h2 {
 
 .gallery-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 15px;
   padding: 10%;
   margin: 0 auto;
@@ -135,43 +145,71 @@ h2 {
   display: block;
 }
 
-@media (max-width: 768px) {
-  body {
-    width: 95%; /* More screen usage */
-  }
 
-  p {
-    font-size: 1.1em; /* Better readability */
+@media (min-width: 768px) {
+  .title {
+    font-size: 5rem;
   }
-
-  .section,
-  .courses,
-  li {
-    margin-left: 5%;
-    margin-right: 5%; /* Almost full width */
+  
+  .subtitle {
+    font-size: 2rem;
+    top: 10%;
   }
-
-  .navbar {
-    flex-wrap: wrap; /* Allow nav items to wrap */
+  
+  .description {
+    width: 80%;
+    margin-top: 15%;
   }
-
+  
   .navbar a {
-    font-size: 18px;
-    padding: 4px 8px; /* Better touch targets */
+    font-size: 1.5rem;
   }
-
-  main {
-    margin-top: 60px;
-    margin-bottom: 60px;
-    padding-bottom: 60px; /* Prevents footer cutoff */
+  
+  .gallery-container {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+    padding: 10%;
   }
-
-  footer {
-    padding-top: 10px;
+  
+  .gallery-item img {
+    height: 200px;
   }
+}
 
-  .footernav a {
-    font-size: 18px;
-    padding: 5px;
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+  
+  .navbar a {
+    padding: 8px;
+    font-size: 1rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    top: 45%;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    top: 20%;
+  }
+  
+  .description {
+    margin-top: 40%;
+    padding-top: 15%;
+    font-size: 12px;
+    width: 90%;
+  }
+  
+  .gallery-container {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    margin-top: 35%;
+  }
+  
+  .gallery-item img {
+    height: 120px;
   }
 }
