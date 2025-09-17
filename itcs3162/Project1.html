@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">    
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-family: 'Gowun Dodum', sans-serif;
+        }
+        main {
+            padding: 20px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        li {
+            margin: 5px 0;
+        }
+
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .introduction h2 {
+            margin-top: 0;
+        }
+        .data-source h2 {
+            margin-top: 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Project 1</h1>
+    </header> 
+
+    <main>
+        <section class ="introduction">
+            <h2>Introduction</h2>
+            <p style="font-weight: bold;">
+                Which U.S. regions consistently experience the highest frequency of severe weather events over time?
+            </p>
+            <p>
+                This project analyzes historical storm data to identify U.S. regions most consistently impacted by extreme weather.
+                I aim to determine which states or areas experience the highest frequency of events like hurricanes, tornadoes, floods, and winter storms over time.
+                This analysis seeks to provide a data-driven answer to guide preparedness and resource allocation.
+            </p>
+        </section>
+
+        <section class="data-source">
+            <h2>Data Source</h2>
+            <a href="https://www.kaggle.com/datasets/sobhanmoosavi/us-weather-events">US Weather Events (2016 - 2022)</a>
+            <p>
+                The dataset that is used is a compilation of 8.6 million weather events in the United States from 2016 to 2022, sourced from 2,071 airport-based weather stations nationwide.
+            </p>
+            <ul style="text-align: left; display: inline-block;">
+                <h3>The weather types include:</h3>
+                <li>Severe-Cold</li>
+                <li>Fog</li>
+                <li>Hail</li>
+                <li>Rain</li>
+                <li>Snow</li>
+                <li>Storm</li>
+                <li>Other precipitation</li>
+            </ul>
+            <p>
+                The dataset includes the severity of each event ranging from light to severe, along with the start and end times, amount of precipitation, and location (state and coordinates).
+            </p>
+        </section>
+
+        <section>
+            <h2>Data Pre-processing</h2>
+            <p>
+                The first thing I did to clean the dataset was to find if there were any null values.
+                The 'City' and 'ZipCode' columns had null values.
+                ZipCode had more null values so i removed it completely becuase it's not needed, then removed the null values from the 'City' column.
+            </p>
+            <p>
+                I based the location of the weather using 'City' for the location of the weather.
+                Since there are multiple Cities with the same name, I combined the City, County, and State into one new column called 'Location'.
+                I then Dropped the 'City' and 'County' columns.
+            </p>
+        </section>
+        <section>
+            <h2>Visualizations</h2>
+            <h3>Severe Storms in the US</h3>
+            <img src="SevereStorms.png" alt="Severe Storms">
+            <p>
+                The places with the highest frequency of severe storms over time are the Southeastern region. 
+                There is a cluster in the upper midwest and a cluster in the southwest in the great plains. 
+                This is where warm air coming from the gulf of mexico meets the cold air coming from the artic during the spring. This creates massive storms.
+                This Visualization was created with Folium, an interactive mapping library for Python.
+                It took me days to create this visualization figuring out a way to get a good map that didn't take 30 minutes to render.
+            </p>
+            <h3>Top 10 Severe Storms by place</h3>
+            <img src="top10Places.png" alt="Top 10 Places">
+        </section>
+        <section>
+            <h2>Impact</h2>
+            <p> 
+                The results show where the highest frequency of severe storms occur in the US.
+                This could be used by governments to plan for preparedness and resource allocation.
+            </p>
+        </section>
+        <section class="references">
+            <h2>References</h2>
+            <p>
+                <a href="https://www.kaggle.com/datasets/sobhanmoosavi/us-weather-events">US Weather Events (2016 - 2022)</a>
+            </p>
+            <p>
+                Moosavi, Sobhan, Mohammad Hossein Samavatian, Arnab Nandi, Srinivasan Parthasarathy, and Rajiv Ramnath. “Short and Long-term Pattern Discovery Over Large-Scale Geo-Spatiotemporal Data.” In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining, ACM, 2019.
+            </p>
+        </section>
+        <section>
+            <h2>Code</h2>
+            <p style="font-size: 1.5em;">  
+                <a href="weatherData.html" >Project 1 Code</a>
+            </p>
+        </section>
+
+    </main>
+
+</body>
+</html>
