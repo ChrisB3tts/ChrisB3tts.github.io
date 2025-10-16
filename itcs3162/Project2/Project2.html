@@ -43,7 +43,7 @@
         }
 
         a {
-            color: #4CAF50;
+            color: #491c2b;
             text-decoration: none;
         }
         a:hover {
@@ -79,15 +79,103 @@
         <h1>Project 2</h1>
     </header>
     <main>
-        <section class="introduction">
+        <section class ="introduction">
             <h2>Introduction</h2>
-            <p>Predicting the genre of a song based on its qualities. Using Audio Features usch as Energy, Tempo, Danceability, ect. to predict the genre of a song.</p>
+            <p style="font-weight: bold;">
+                Can the genre of music be determined by the quilities if the sound?
+            </p>
+            <p>
+                The project uses the qualities of the sound to determine the genre of music.
+                I aim to create a classification model that can determine the genre of music based on these qualities.
+            </p>
         </section>
+
         <section class="data-source">
             <h2>Data Source</h2>
-            <p>Describe the data source and its location.</p>
-            <a href="https://www.kaggle.com/datasets/solomonameh/spotify-music-dataset">Spotify Genre Classification</a>
+            <a href="https://www.kaggle.com/datasets/solomonameh/spotify-music-dataset">Spotify Music Dataset</a>
+            <p>
+                The dataset is a compilation of songs that are in Spotify playlists. 
+                It includes the qualities of the sound such as tempo, danceability, valence, and loudness.
+                It also inlcudes a lof of data about the song such as genre, artist, track popularity, and duration as well as more technical information such as track id, uri, and api stuff.
+            </p>
         </section>
+
+        <section>
+            <h2>Data Pre-processing</h2>
+            <p>
+                For the data preprocessing, I removed all the columns that were not required for the model. This includes data that identifies the song on spotify such as href, id, uri, etc.
+                I removed the very few null entries in the dataset.
+            </p>
+            <p>
+                The columns that I kept are:
+                <ul style="text-align: left; display: inline-block;">
+                <h3>Music Qualities include:</h3>
+                <li>Time Signature</li>
+                <li>Spechiness</li>
+                <li>Danceability</li>
+                <li>Energy</li>
+                <li>Valence</li>
+                <li>Key</li>
+                <li>Tempo</li>
+                <li>Loudness</li>
+                <li>Acousticness</li>
+                <li>Liveness</li>
+                <li>Track Popularity</li>
+                <li>Duration</li>
+
+
+            </ul>
+            </p>
+        </section>
+        <section>
+            <h2>Visualizations</h2>
+            <h3>Genre Count</h3>
+            <img src="output.png" alt="Count of each Genre">
+            <p>
+                This chart show the distribution of genres in the dataset. Electronic music is the most popular 
+                genre followed by ambient, lofi, latin, and world. 
+            </p>
+        </section>
+        <section>
+            <h2>Model</h2>
+            <p>
+                I created a classification model using the following algorithms:
+                <ul>
+                    <li>Decision Tree</li>
+                    <li>Random Forest</li>
+                    <li>K Nearest Neighbors</li>
+                </ul>
+                The model that performs the best was Random Forest with an accuracy ranging from 48.5% to 50.5%.
+                It has a precison score ranging from 0.29 to 0.32, a recall score ranging from 0.35 to 0.50, and an f1 score ranging from 0.32 to 0.36.
+                Due to there being a large amount of catagories, the model was not able to perform well. If the genre separation was more gernalized, the model would have performed better.
+            </p>
+        </section>
+        <section>
+            <h2>Impact</h2>
+            <p> 
+                This project shows that there is a correlation between the qualities of the sound and the genre of music. Though in these circumstances, the model was not able to perform well, in a real world setting, the model could be used to determine the genre of music based on the qualities of the sound.
+            </p>
+        </section>
+        <section class="references">
+            <h2>References</h2>
+            <p>
+                <a href="https://www.kaggle.com/datasets/solomonameh/spotify-music-dataset">Spotify Music Dataset</a>
+            </p>
+
+        </section>
+        <section>
+            <h2>Code</h2>
+            <p style="font-size: 1.5em;">  
+                <a href="musicGenre.html" >Project 2 Code</a>
+            </p>
+        </section>
+        <section>
+            <h2>Takeaways</h2>
+            <p>  
+                This project has taught me more about classification models and the how to understand the metrics of a classification models.
+            </p>
+        </section>
+
     </main>
 </body>
 
